@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Face to face</title>
+</head>
+<body>
+<div>
+    <video id="my-stream" width="320" height="240" autoplay playsinline controls></video>
+    <div id="errorMsg"></div>
+</div>
+
+<script src="../js/peer.js" type="text/javascript"></script>
+<script
+        src="https://code.jquery.com/jquery-3.3.1.js"
+        integrity="sha256-2Kok7MbOyxpgUVvAk/HJ2jigOSYS2auK4Pfzbm7uH60="
+        crossorigin="anonymous"></script>
+<script src="../js/get-user-media.js" type="text/javascript"></script>
+
+<script>
+    var peer = new Peer({key: 'n75dq11v0jk2zkt9'});
+</script>
+</body>
+</html>
