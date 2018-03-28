@@ -25,7 +25,8 @@ $('#other-peer-id').submit(function(){
         var call = peer.call(orderPeerId, stream);
         console.log(call);
         call.on('stream', function(remoteStream) {
-            getUserMedia('#other-stream', '#errorMsg');
+            var video = document.querySelector('#other-stream');
+            video.srcObject = remoteStream;
         });
     });
 
@@ -38,7 +39,8 @@ peer.on('call', function(call) {
     getUserMedia('#my-stream', '#errorMsg', function(stream) {
         call.answer(stream);
         call.on('stream', function(remoteStream){
-            getUserMedia('#other-stream', '#errorMsg');
+            var video = document.querySelector('#other-stream');
+            video.srcObject = remoteStream;
         });
     });
 });
