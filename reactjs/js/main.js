@@ -2,7 +2,7 @@ getUserMedia('#my-stream', '#errorMsg');
 
 // var peer = new Peer({key: 'n75dq11v0jk2zkt9'});
 var peer = new Peer({
-    host: 'nttinh86peerserver.herokuapp.com/',
+    host: 'nttinh86peerserver.herokuapp.com',
     secure: true,
     port: 443,
     key: 'peerjs',
