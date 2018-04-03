@@ -1,0 +1,12 @@
+video {
+    width: 100%;
+
+}
+
+#other-stream {
+    display: none;
+}
+
+#my-peer-id {
+    font-weight: bold;
+}
