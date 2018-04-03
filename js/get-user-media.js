@@ -8,10 +8,10 @@
 
 'use strict';
 
-function getUserMedia(videoTag, errorMsgTag, callback=null) {
+function getUserMedia(data, errorMsgTag, callback=null) {
 
     var errorElement = document.querySelector(errorMsgTag);
-    var video = document.querySelector(videoTag);
+    var video = document.querySelector(data.videoTag);
 
 // Put variables in global scope to make them available to the browser console.
     var constraints = window.constraints = {
@@ -28,6 +28,7 @@ function getUserMedia(videoTag, errorMsgTag, callback=null) {
         };
         window.stream = stream; // make variable available to browser console
         video.srcObject = stream;
+        video.volume = data.volume;
         if (callback) callback(stream);
     }
 

@@ -16,7 +16,7 @@ socket.on('server-send-user-online', function(data) {
 
 
 // Display video
-getUserMedia('#my-stream', '#errorMsg');
+getUserMedia({videoTag: '#my-stream', volume: 0}, '#errorMsg');
 
 // var peer = new Peer({key: 'n75dq11v0jk2zkt9'});
 var peer = new Peer({
@@ -45,7 +45,7 @@ function call() {
         // Caller
         var orderPeerId = $(this).attr('id');
         // Get stream
-        getUserMedia('#my-stream', '#errorMsg', function (stream) {
+        getUserMedia({videoTag: "#my-stream", volume: 0}, '#errorMsg', function (stream) {
             // Call a peer, providing our mediaStream
             let call = peer.call(orderPeerId, stream);
             call.on('stream', function(remoteStream) {
@@ -63,7 +63,7 @@ function call() {
 peer.on('call', function(call) {
     $('#other-stream').show();
     // Get stream
-    getUserMedia('#my-stream', '#errorMsg', function(stream) {
+    getUserMedia({videoTag: "#my-stream", volume: 0}, '#errorMsg', function(stream) {
         call.answer(stream);
         call.on('stream', function(remoteStream){
             var video = document.querySelector('#other-stream');
