@@ -1,5 +1,5 @@
 // Socket.io
-var socket = io.connect('http://localhost:4000');
+var socket = io.connect('https://nttinh86nodejs.herokuapp.com');
 
 function clientSendPeerId(peerId) {
     socket.emit('client-send-peer-id', {peerId: peerId});
