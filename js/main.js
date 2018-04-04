@@ -1,3 +1,20 @@
+var myIceServers;
+
+$( document ).ready( function () {
+    $.ajax ({
+        url: "https://global.xirsys.net/_turn/nttinh86.github.io/",
+        type: "PUT",
+        async: false,
+        headers: {
+            "Authorization": "Basic " + btoa("nttinh86:156d7bc6-27f7-11e8-b1b7-9a80c18987a0")
+        },
+        success: function (res){
+            console.log(res.v.iceServers);
+            myIceServers = res.v.iceServers;
+        }
+    });
+});
+
 // Socket.io
 var socket = io.connect('https://nttinh86nodejs.herokuapp.com');
 
@@ -24,7 +41,8 @@ var peer = new Peer({
     secure: true,
     port: 443,
     key: 'peerjs',
-    debug: 3
+    debug: 3,
+    config: myIceServers
 });
 
 // Create peer
