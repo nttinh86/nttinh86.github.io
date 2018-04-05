@@ -8,7 +8,7 @@ function iceServer()
     var def = $.Deferred();
     myIceServers = [
         {
-            url: "stun:139.162.58.82:3478"
+            url: "stun:139.162.58.82:3478?transport=tcp"
         },
         {
             url: "turn:139.162.58.82:3478?transport=tcp",
