@@ -11,7 +11,8 @@ $.ajax ({
         "Authorization": "Basic " + btoa("nttinh86:156d7bc6-27f7-11e8-b1b7-9a80c18987a0")
     }
 }).then(function(res){
-    myIceServers = res.v.iceServers;
+    myIceServers = res.v;
+    console.log(myIceServers);
 
     // Socket.io
     socket = io.connect('https://nttinh86nodejs.herokuapp.com');
