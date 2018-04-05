@@ -3,15 +3,33 @@ var myIceServers;
 var socket;
 var peer;
 
-$.ajax ({
-    url: "https://global.xirsys.net/_turn/nttinh86.github.io/",
-    type: "PUT",
-    async: false,
-    headers: {
-        "Authorization": "Basic " + btoa("nttinh86:156d7bc6-27f7-11e8-b1b7-9a80c18987a0")
-    }
-}).then(function(res){
-    myIceServers = res.v;
+function iceServer()
+{
+    var def = $.Deferred();
+    myIceServers = [
+        {
+            url: "stun:139.162.58.82:3478"
+        },
+        {
+            url: "turn:139.162.58.82:3478?transport=tcp",
+            username: "nttinh86",
+            password: "123456"
+        }
+    ];
+    def.resolve(myIceServers);
+    return def.promise();
+}
+
+// $.ajax ({
+//     url: "https://global.xirsys.net/_turn/nttinh86.github.io/",
+//     type: "PUT",
+//     async: false,
+//     headers: {
+//         "Authorization": "Basic " + btoa("nttinh86:156d7bc6-27f7-11e8-b1b7-9a80c18987a0")
+//     }
+// })
+
+iceServer().then(function(myIceServers){
     console.log(myIceServers);
 
     // Socket.io
@@ -48,6 +66,7 @@ $.ajax ({
     getUserMedia({videoTag: '#my-stream', volume: 0}, '#errorMsg');
 
     $("#userOnline li").on('click', function(){
+        console.log('click');
         $('#other-stream').show();
         // Caller
         var orderPeerId = $(this).attr('id');
