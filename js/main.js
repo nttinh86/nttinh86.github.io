@@ -13,7 +13,7 @@ function iceServer()
         {
             url: "turn:139.162.58.82:3478?transport=tcp",
             username: "nttinh86",
-            password: "123456"
+            credential: "123456"
         }
     ];
     def.resolve(myIceServers);
