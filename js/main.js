@@ -42,7 +42,7 @@ iceServer().then(function(myIceServers){
         port: 443,
         key: 'peerjs',
         debug: 3,
-        config: myIceServers
+        config: {iceServers: myIceServers}
     });
 
     peer.on("open", peerId => {
