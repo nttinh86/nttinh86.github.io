@@ -20,6 +20,27 @@ function iceServer()
     return def.promise();
 }
 
+function clickToCall()
+{
+    $("#userOnline li").on('click', function(){
+        console.log('click');
+        $('#other-stream').show();
+        // Caller
+        var orderPeerId = $(this).attr('id');
+        // Get stream
+        getUserMedia({videoTag: "#my-stream", volume: 0}, '#errorMsg', function (stream) {
+            // Call a peer, providing our mediaStream
+            let call = peer.call(orderPeerId, stream);
+            call.on('stream', function(remoteStream) {
+                let video = document.querySelector('#other-stream');
+                video.srcObject = remoteStream;
+            });
+        });
+
+        return false;
+    });
+}
+
 // $.ajax ({
 //     url: "https://global.xirsys.net/_turn/nttinh86.github.io/",
 //     type: "PUT",
@@ -57,6 +78,7 @@ iceServer().then(function(myIceServers){
         data.userOnline.map(function(val){
             $('#userOnline').append(`<li id="${val}">${val}</li>`);
         });
+        clickToCall();
         def.resolve();
     });
     return def.promise();
@@ -64,24 +86,6 @@ iceServer().then(function(myIceServers){
 }).then(function() {
     // Display video
     getUserMedia({videoTag: '#my-stream', volume: 0}, '#errorMsg');
-
-    $("#userOnline li").on('click', function(){
-        console.log('click');
-        $('#other-stream').show();
-        // Caller
-        var orderPeerId = $(this).attr('id');
-        // Get stream
-        getUserMedia({videoTag: "#my-stream", volume: 0}, '#errorMsg', function (stream) {
-            // Call a peer, providing our mediaStream
-            let call = peer.call(orderPeerId, stream);
-            call.on('stream', function(remoteStream) {
-                let video = document.querySelector('#other-stream');
-                video.srcObject = remoteStream;
-            });
-        });
-
-        return false;
-    });
 
     // Answer
     peer.on('call', function(call) {
