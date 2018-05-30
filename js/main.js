@@ -13,7 +13,7 @@ function iceServer()
         {
             url: "turn:139.162.58.82:3478?transport=tcp",
             username: "nttinh86",
-            credential: "123456"
+            credential: "8ik,&UJM"
         }
     ];
     def.resolve(myIceServers);
@@ -57,10 +57,20 @@ iceServer().then(function(myIceServers){
     socket = io.connect('https://nttinh86nodejs.herokuapp.com');
 
     // Create peer
+    // peer = new Peer({
+    //     host: 'nttinh86peerserver.herokuapp.com',
+    //     secure: true,
+    //     port: 443,
+    //     key: 'peerjs',
+    //     debug: 3,
+    //     config: {iceServers: myIceServers}
+    // });
+
     peer = new Peer({
-        host: 'nttinh86peerserver.herokuapp.com',
+        host: 'localhost',
+        path: '/peerjs-server',
         secure: true,
-        port: 443,
+        port: 4443,
         key: 'peerjs',
         debug: 3,
         config: {iceServers: myIceServers}
