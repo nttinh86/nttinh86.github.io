@@ -54,7 +54,7 @@ iceServer().then(function(myIceServers){
     console.log(myIceServers);
 
     // Socket.io
-    socket = io.connect('https://nttinh86nodejs.herokuapp.com');
+    socket = io.connect('https://nttinh86nodejs.herokuapp.com:3000');
 
     // Create peer
     // peer = new Peer({
