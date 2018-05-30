@@ -70,9 +70,10 @@ iceServer().then(function(myIceServers){
         host: 'nttinh86peerserver.herokuapp.com',
         path: '/peerjs-server',
         secure: true,
-//         port: 4443,
+        port: 4443,
         key: 'peerjs',
         debug: 3,
+        proxied: true,
         config: {iceServers: myIceServers}
     });
 
