@@ -45,7 +45,7 @@ function clickToCall()
 //     url: "https://global.xirsys.net/_turn/nttinh86.github.io/",
 //     type: "PUT",
 //     async: false,
-//     headers: {
+//     headers: {nttinh86peerserver.herokuapp.com
 //         "Authorization": "Basic " + btoa("nttinh86:156d7bc6-27f7-11e8-b1b7-9a80c18987a0")
 //     }
 // })
@@ -67,8 +67,8 @@ iceServer().then(function(myIceServers){
     // });
 
     peer = new Peer({
-        host: 'nttinh86peerserver.herokuapp.com',
-        //path: '/peerjs-server',
+        host: '139.162.58.82',
+        path: '/peerjs-server',
         secure: true,
         port: 4443,
         key: 'peerjs',
