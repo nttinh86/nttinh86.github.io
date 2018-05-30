@@ -67,7 +67,7 @@ iceServer().then(function(myIceServers){
     // });
 
     peer = new Peer({
-        host: '139.162.58.82:4443',
+        host: '139.162.58.82',
         path: '/peerjs-server',
         secure: true,
         port: 4443,
