@@ -67,7 +67,7 @@ iceServer().then(function(myIceServers){
     // });
 
     peer = new Peer({
-        host: 'https://nttinh86peerserver.herokuapp.com',
+        host: 'nttinh86peerserver.herokuapp.com',
         path: '/peerjs-server',
         secure: true,
         port: 4443,
