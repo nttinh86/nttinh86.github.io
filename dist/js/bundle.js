@@ -427,7 +427,7 @@ eval("__webpack_require__.r(__webpack_exports__);\n/* harmony import */ var _scs
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
-eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, \"SOCKET_SERVER_URL\", function() { return SOCKET_SERVER_URL; });\n// const SOCKET_SERVER_URL = \"https://nttinh86nodejs.herokuapp.com\";\nconst SOCKET_SERVER_URL = \"http://localhost:4000\";\n\n\n\n//# sourceURL=webpack:///./app/js/config/config.js?");
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, \"SOCKET_SERVER_URL\", function() { return SOCKET_SERVER_URL; });\n// const SOCKET_SERVER_URL = \"https://nttinh86nodejs.herokuapp.com\";\nconst SOCKET_SERVER_URL = \"http://139.162.58.82:4000\";\n\n\n\n//# sourceURL=webpack:///./app/js/config/config.js?");
 
 /***/ }),
 
