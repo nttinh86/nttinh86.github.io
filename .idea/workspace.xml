@@ -2,7 +2,38 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="1cf469a4-0d8b-4c9f-9264-0987c2be234e" name="Default" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/js/config/config.js" beforeDir="false" afterPath="$PROJECT_DIR$/app/js/config/config.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/dist/chatting.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dist/close-chat-list.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dist/connecting.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dist/css/bundle.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dist/icon/body-logo-chatting.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dist/icon/body-logo-connecting.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dist/icon/body-owner-video.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dist/icon/body-remote-video.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dist/icon/chatting-add-option.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dist/icon/chatting-logo.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dist/icon/chatting-send.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dist/icon/footer-camera-off.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dist/icon/footer-camera.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dist/icon/footer-micro-off-2.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dist/icon/footer-micro-off.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dist/icon/footer-micro.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dist/icon/footer-phone.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dist/icon/header-camera.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dist/icon/header-close.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dist/icon/header-phone.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dist/icon/header-setting.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dist/icon/logo-chat-text.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dist/icon/logo-chat-video.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dist/icon/online-circle.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dist/icon/online-down-arrow.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dist/icon/online-expand-arrow.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dist/icon/online-up-arrow.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dist/icon/owner-camera-maximun.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dist/index.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dist/js/bundle.js" beforeDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/.tmp/" />
     <ignored path="$PROJECT_DIR$/temp/" />
@@ -19,8 +50,8 @@
       <file leaf-file-name="config.js" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/app/js/config/config.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="20">
-              <caret line="1" column="54" lean-forward="true" selection-start-line="1" selection-start-column="54" selection-end-line="1" selection-end-column="54" />
+            <state relative-caret-position="60">
+              <caret line="3" column="18" selection-start-line="3" selection-start-column="18" selection-end-line="3" selection-end-column="18" />
             </state>
           </provider>
         </entry>
@@ -67,9 +98,9 @@
   </component>
   <component name="ProjectFrameBounds" extendedState="6">
     <option name="x" value="45" />
-    <option name="y" value="25" />
-    <option name="width" value="1321" />
-    <option name="height" value="743" />
+    <option name="y" value="27" />
+    <option name="width" value="1311" />
+    <option name="height" value="741" />
   </component>
   <component name="ProjectView">
     <navigator proportions="" version="1">
@@ -110,7 +141,7 @@
   </component>
   <component name="PropertiesComponent">
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="/var/www/facetoface.local/public_html/backend" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="node.js.detected.package.prettier" value="true" />
     <property name="node.js.path.for.package.prettier" value="project" />
     <property name="node.js.selected.package.prettier" value="" />
@@ -157,7 +188,9 @@
       <workItem from="1527646969499" duration="6004000" />
       <workItem from="1527656510338" duration="157000" />
       <workItem from="1527657990768" duration="3086000" />
-      <workItem from="1528733346112" duration="880000" />
+      <workItem from="1528733346112" duration="1708000" />
+      <workItem from="1528735084680" duration="11000" />
+      <workItem from="1528771436701" duration="11000" />
     </task>
     <task id="LOCAL-00001" summary="Build heroku peerserver">
       <created>1522230662077</created>
@@ -289,7 +322,7 @@
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="58790000" />
+    <option name="totallyTimeSpent" value="59640000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="45" y="25" width="1321" height="743" extended-state="6" />
@@ -300,9 +333,9 @@
       <window_info anchor="bottom" id="Docker" order="7" show_stripe_button="false" />
       <window_info anchor="bottom" id="Event Log" order="7" side_tool="true" />
       <window_info anchor="bottom" id="Run" order="2" />
-      <window_info anchor="bottom" id="Version Control" order="7" weight="0.46721312" />
+      <window_info anchor="bottom" id="Version Control" order="7" weight="0.46666667" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
-      <window_info active="true" anchor="bottom" id="Terminal" order="7" visible="true" weight="0.60683763" />
+      <window_info active="true" anchor="bottom" id="Terminal" order="7" visible="true" weight="0.5692308" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
@@ -412,8 +445,8 @@
     <entry file="file://$PROJECT_DIR$/js/main.js" />
     <entry file="file://$PROJECT_DIR$/app/js/config/config.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="20">
-          <caret line="1" column="54" lean-forward="true" selection-start-line="1" selection-start-column="54" selection-end-line="1" selection-end-column="54" />
+        <state relative-caret-position="60">
+          <caret line="3" column="18" selection-start-line="3" selection-start-column="18" selection-end-line="3" selection-end-column="18" />
         </state>
       </provider>
     </entry>
