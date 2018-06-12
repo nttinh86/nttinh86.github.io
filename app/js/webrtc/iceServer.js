@@ -1,10 +1,10 @@
 function iceServer() {
     return [
         {
-            url: "stun:139.162.58.82:3478?transport=tcp"
+            urls: "stun:139.162.58.82:3478?transport=udp"
         },
         {
-            url: "turn:139.162.58.82:3478?transport=tcp",
+            urls: "turn:139.162.58.82:3478?transport=udp",
             username: "nttinh86",
             credential: "123456"
         }

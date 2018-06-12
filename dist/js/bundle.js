@@ -559,7 +559,7 @@ eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export (binding) *
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
-eval("__webpack_require__.r(__webpack_exports__);\nfunction iceServer() {\n    return [{\n        url: \"stun:139.162.58.82:3478?transport=tcp\"\n    }, {\n        url: \"turn:139.162.58.82:3478?transport=tcp\",\n        username: \"nttinh86\",\n        credential: \"123456\"\n    }];\n}\n\n/* harmony default export */ __webpack_exports__[\"default\"] = (iceServer);\n\n//# sourceURL=webpack:///./app/js/webrtc/iceServer.js?");
+eval("__webpack_require__.r(__webpack_exports__);\nfunction iceServer() {\n    return [{\n        urls: \"stun:139.162.58.82:3478?transport=udp\"\n    }, {\n        urls: \"turn:139.162.58.82:3478?transport=udp\",\n        username: \"nttinh86\",\n        credential: \"123456\"\n    }];\n}\n\n/* harmony default export */ __webpack_exports__[\"default\"] = (iceServer);\n\n//# sourceURL=webpack:///./app/js/webrtc/iceServer.js?");
 
 /***/ }),
 
